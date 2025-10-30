@@ -79,7 +79,7 @@ function loadEmployeeData(employeeId) {
             <td>
                 <div class="btn-group" role="group" aria-label="task actions">
                     <button type="button" class="btn btn-sm btn-outline-secondary">Reassign</button>
-                    <button type="button" class="btn btn-sm btn-outline-warning">Remove</button>
+                    <button type="button" class="btn btn-sm btn-outline-warning">Edit</button>
                     <button type="button" class="btn btn-sm btn-outline-danger">Delete</button>
                 </div>
             </td>
