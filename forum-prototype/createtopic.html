@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Topic</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <span class="navbar-brand">Make-It-All Knowledge Base Forum</span>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <a href="index.html" class="btn btn-secondary mb-3">
+            <i class="bi bi-arrow-left"></i> Back to Topics
+        </a>
+
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Create New Topic</h3>
+            </div>
+            <div class="card-body">
+                <form id="createTopicForm" onsubmit="handleSubmit(event)">
+                    <div class="mb-3">
+                        <label for="title" class="form-label fw-bold">
+                            Title <span class="text-danger">*</span>
+                        </label>
+                        <input type="text" class="form-control" id="title" required>
+
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">
+                            Category <span class="text-danger">*</span>
+                        </label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="category" id="technical" value="Technical" required>
+                            <label class="form-check-label" for="technical">
+                                Technical
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="category" id="nonTechnical" value="Non-Technical" required>
+                            <label class="form-check-label" for="nonTechnical">
+                                Non-Technical
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="description" class="form-label fw-bold">
+                            Description <span class="text-danger">*</span>
+                        </label>
+                        <textarea class="form-control" id="description" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success">Submit Topic</button>
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                </form>
+            </div>
+    </div>
+
+    <div class="accordion mt-3" id="guidelinesAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#guidelinesCollapse">
+                    Topic Guidelines
+                </button>
+                <div id="guidelinesCollapse" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <p><strong>Technical Topics</strong> Software bugs, hardware issues, programming help</p>
+                        <p><strong>Non-Technical Topics</strong> Admin procedures, ordering supplies</p>
+                        
+                    </div>
+                
+            </h2>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/createtopic.js"></script>
+</body>
+
+</html>
