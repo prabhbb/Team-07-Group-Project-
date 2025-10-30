@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Managers Dashboard</title>
+
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+      rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="tasks.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+    <body>
+        <div class="container my-4">
+            <h1 class="text-center mb-4">Manager Dashboard</h1>
+
+            <div class="row">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                        <h5 class="card-title">Projects</h5>
+                        <a href="projectA.html" class="text-decoration-none">
+                            <p class="mb-1 hover-effect p-2 rounded" id="projectA">Project A - 75% Due: 2025-11-11</p>
+                        </a>
+                        <div class="progress mb-2">
+                            <div class="progress-bar bg-primary" style="width: 75%"></div>
+                        </div>
+                        <a href="projectB.html" class="text-decoration-none">
+                            <p class="mb-1 hover-effect p-2 rounded" id="projectB">Project B - 50% Due: 2025-12-13</p>
+                        </a>
+                        <div class="progress mb-2">
+                            <div class="progress-bar bg-success" style="width: 50%"></div>
+                        </div>
+                        <a href="projectC.html" class="text-decoration-none">
+                            <p class="mb-1 hover-effect p-2 rounded" id="projectC">Project C - 30% Due: 2026-01-01</p>
+                        </a>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" style="width: 30%"></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Create New Task</h5>
+                            <form id="createTaskForm" class="row g-2">
+                                <div class="col-md-3">
+                                    <input id="newTaskProject" class="form-control" placeholder="Project">
+                                </div>
+                                <div class="col-md-3">
+                                    <input id="newTaskAssignee" class="form-control" placeholder="Employee">
+                                </div>
+                                <div class="col-md-3">
+                                    <input id="newTaskName" class="form-control" placeholder="Task name">
+                                </div>
+                                <div class="col-md-2">
+                                    <select id="newTaskStatus" class="form-select">
+                                        <option value="To Do">To Do</option>
+                                        <option value="In Progress">In Progress</option>
+                                        <option value="Done">Done</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-1 d-grid">
+                                    <button id="createTaskBtn" class="btn btn-primary">Create</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                    <h5 class="card-title">Team Workload</h5>
+                    <ul class="list-group list-group-flush">
+                        <a href="employee.html?id=mack" class="list-group-item hover-effect text-decoration-none">Mack: 5 tasks</a>
+                        <a href="employee.html?id=sarah" class="list-group-item hover-effect text-decoration-none">Sarah: 3 tasks</a>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col"5>
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                    <h5 class="card-title">Incoming Deadlines</h5>
+                    <table class="table table-sm table-bordered align-middle">
+                        <thead class="table-light">
+                        <tr>
+                            <th>Task</th>
+                            <th>Assignee</th>
+                            <th>Status</th>
+                            <th>Due Date</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Task 1</td>
+                            <td>Mack</td>
+                            <td>Overdue</td>
+                            <td>2025-10-10</td>
+                        </tr>
+                        <tr>
+                            <td>Task 2</td>
+                            <td>Sarah</td>
+                            <td>Completed</td>
+                            <td>2025-12-25</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
