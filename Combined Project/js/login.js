@@ -30,7 +30,7 @@ function goToDashboard(username, password, messageBox) {
                     messageBox.textContent = 'Employee Login successful! Redirecting...';
                     messageBox.className = 'message success';
                     messageBox.style.display = 'block';
-                    window.location.href = "manager/employee.html";
+                    window.location.href = "employee/index.html";
           }
           else {
                     messageBox.textContent = 'Invalid username or password';
