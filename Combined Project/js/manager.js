@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Existing createTaskForm code
     const form = document.getElementById('createTaskForm');
     if (form) {
         form.addEventListener('submit', function (e) {
@@ -16,14 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
             setTimeout(() => alertDiv.remove(), 3000);
 
             form.reset();
-        });
-    }
-
-    // New Forum button code
-    const forumBtn = document.getElementById('forumBtn');
-    if (forumBtn) {
-        forumBtn.addEventListener('click', function () {
-            window.location.href = "../employee/index.html";
         });
     }
 });

@@ -1,8 +1,6 @@
 .gradient-custom {
-  /* Fallback color for unsupported browsers */
   background-color: #0062E6;
 
-  /* Actual gradient */
   background: linear-gradient(to right, #8a00e6, #3341ff);
 
   height: 100%;
