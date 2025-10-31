@@ -1,0 +1,18 @@
+body 
+{
+    background-color: #7c8289;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.progress {
+  height: 10px;
+}
+
+.hover-effect:hover {
+    background-color: #f8f9fa;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
