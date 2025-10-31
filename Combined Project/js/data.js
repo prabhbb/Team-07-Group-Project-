@@ -5,7 +5,7 @@ let fakeTopics = JSON.parse(localStorage.getItem('topics')) || [
         description: "Report bugs and issues related to software problems.",
         category: "Technical",
         postCount: 1,
-        lastActivity: "2025-05-12"
+        lastActivity: "2025-12-12"
     },
 
     {
@@ -14,7 +14,7 @@ let fakeTopics = JSON.parse(localStorage.getItem('topics')) || [
         description: "How to order printing paper and office supplies.",
         category: "Non-Technical",
         postCount: 1,
-        lastActivity: "2025-05-10"
+        lastActivity: "2025-31-10"
     }
 ]
 
