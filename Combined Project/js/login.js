@@ -34,8 +34,7 @@ function goToDashboard(username, password, messageBox) {
           }
           else {
                     messageBox.textContent = 'Invalid username or password';
-                    messageEl.className = 'message error';
-                    messageEl.style.display = 'block';
-
+                    messageBox.className = 'message error';
+                    messageBox.style.display = 'block';
           }
 }
