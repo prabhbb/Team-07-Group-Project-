@@ -10,8 +10,6 @@ const employees = {
             { name: 'Task 3', project: 'Project C', status: 'Completed', dueDate: '2025-06-15' }
         ],
         metrics: {
-            completionRate: 75,
-            monthlyTasks: { completed: 8, total: 10 },
             currentTasks: 5,
             completedTasks: 15
         }
@@ -26,8 +24,6 @@ const employees = {
             { name: 'Task 2', project: 'Project B', status: 'In Progress', dueDate: '2025-05-20' }
         ],
         metrics: {
-            completionRate: 80,
-            monthlyTasks: { completed: 12, total: 15 },
             currentTasks: 3,
             completedTasks: 22
         }
@@ -57,11 +53,6 @@ function loadEmployeeData(employeeId) {
     document.getElementById('employeeRole').textContent = employee.role;
     document.getElementById('employeeDepartment').textContent = employee.department;
     document.getElementById('employeeProjects').textContent = employee.projects.join(', ');
-
-    document.getElementById('completionRate').style.width = `${employee.metrics.completionRate}%`;
-    document.getElementById('completionRate').textContent = `${employee.metrics.completionRate}%`;
-    document.getElementById('monthlyTasks').textContent = 
-        `${employee.metrics.monthlyTasks.completed} completed / ${employee.metrics.monthlyTasks.total} total`;
 
     document.getElementById('currentTaskCount').textContent = employee.metrics.currentTasks;
     document.getElementById('completedTaskCount').textContent = employee.metrics.completedTasks;
