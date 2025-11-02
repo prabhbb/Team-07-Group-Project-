@@ -11,7 +11,8 @@ const employees = {
         ],
         metrics: {
             currentTasks: 5,
-            completedTasks: 15
+            completedTasks: 15,
+            overdueTasks: 2
         }
     },
     'sarah': {
@@ -25,7 +26,8 @@ const employees = {
         ],
         metrics: {
             currentTasks: 3,
-            completedTasks: 22
+            completedTasks: 22,
+            overdueTasks: 1
         }
     },
     
@@ -56,6 +58,7 @@ function loadEmployeeData(employeeId) {
 
     document.getElementById('currentTaskCount').textContent = employee.metrics.currentTasks;
     document.getElementById('completedTaskCount').textContent = employee.metrics.completedTasks;
+    document.getElementById('overdueTasks').textContent = employee.metrics.overdueTasks;
 
     const taskTableBody = document.getElementById('taskTableBody');
     taskTableBody.innerHTML = '';
