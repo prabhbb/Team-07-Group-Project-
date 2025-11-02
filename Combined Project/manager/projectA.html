@@ -60,6 +60,7 @@
                                     <tr>
                                         <th>Task</th>
                                         <th>Project</th>
+                                        <th>Employee</th>
                                         <th>Status</th>
                                         <th>Due Date</th>
                                     </tr>
@@ -68,12 +69,14 @@
                                     <tr>
                                         <td>Make website</td>
                                         <td>Project A</td>
+                                        <td>Mack</td>
                                         <td>Completed</td>
-                                        <td>2025-11-05</td>
+                                        <td>2025-11-05</td>                  
                                     </tr>
                                     <tr>
                                         <td>Steal the moon</td>
                                         <td>Project A</td>
+                                        <td>Sarah</td>
                                         <td>In Progress</td>
                                         <td>2025-12-05</td>
                                     </tr>
@@ -108,7 +111,51 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="taskModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header d-flex align-items-center">
+                    <h5 class="modal-title">Task Details</h5>
+                    <button type="button" class="btn btn-danger btn-sm ms-auto" data-bs-dismiss="modal">Delete</button>
+                </div>
+
+                <div class="modal-body">
+                    <form id="postForm">
+                        <div class="mb-3">
+                            <label for="taskName" class="form-label">Task Name</label>
+                            <input id="taskName" type="text" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="employeeName" class="form-label">Employee</label>
+                            <select id="employeeName" class="form-select">
+                                <option value="Mack">Mack</option>
+                                <option value="Sarah">Sarah</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="taskStatus" class="form-label">Status</label>
+                            <select id="taskStatus" class="form-select">
+                                <option value="In Progress">In progress</option>
+                                <option value="Completed">Completed</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="dueDate" class="form-label">Due Date</label>
+                            <input id="dueDate" type="date" class="form-control" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/projectA.js"></script>
 </body>
 </html>
